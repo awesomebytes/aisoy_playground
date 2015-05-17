@@ -1,0 +1,28 @@
+Being inside of the robot you can execute:
+
+To stop everything:
+
+    botapp stop airos
+
+To start the servos:
+
+    roslaunch airos4_servo servo_standalone.launch
+
+To start the camera:
+
+    roslaunch airos4_camera camera.launch
+
+
+From your computer:
+
+To play with the servos:
+
+    rosrun aisoy_playground servos_dyn_rec.py
+
+And get the GUI with:
+    rosrun rqt_reconfigure rqt_reconfigure
+
+
+To visualize the camera:
+    rosrun rqt_image_view rqt_image_view
+
