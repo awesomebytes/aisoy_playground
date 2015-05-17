@@ -21,3 +21,6 @@ Use it with rqt_reconfigure:
 
 Choose `servos_dyn_reconf` and play with the scroll bars.
 
+[![Image of the dynamic reconfigure window](https://raw.githubusercontent.com/awesomebytes/aisoy_playground/master/resources/dynamic_reconf_ss.png)](https://raw.githubusercontent.com/awesomebytes/aisoy_playground/master/resources/dynamic_reconf_ss.png)
+
+
