@@ -1,17 +1,33 @@
-Being inside of the robot you can execute:
+Being inside of the robot you can execute (note that if you launch one of the standalone nodes 
+a nodelet_manager will be launched, so next ones to be launched
+should be the _nodelet.launch nodes):
 
 To stop everything:
 
     botapp stop airos
 
-To start the servos:
+To start the servos (no nodelet version):
 
     roslaunch airos4_servo servo_standalone.launch
 
 To start the camera:
 
     roslaunch airos4_camera camera.launch
+    roslaunch airos4_camera camera_nodelet.launch
 
+To start tts to make robot talk:
+    roslaunch airos4_tts tts.launch
+    roslaunch airos4_tts tts_nodelet.launch
+
+To start robot mouth screen:
+    roslaunch airos4_mouth mouth.launch
+
+To start robot heart:
+    roslaunch airos4_heart heart.launch
+
+To start speech recognition (ASR):
+    roslaunch airos4_asr asr_nodelet.launch
+    roslaunch airos4_asr asr.launch
 
 From your computer:
 
@@ -26,3 +42,9 @@ And get the GUI with:
 To visualize the camera:
     rosrun rqt_image_view rqt_image_view
 
+To activate asr:
+    rosservice call /asr/set_grammar "data: 'hello|hi|bye'"
+
+Listen with:
+    rostopic echo /asr/recognition
+    
