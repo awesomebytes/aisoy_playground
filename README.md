@@ -7,6 +7,7 @@ To work with these scripts you are supposed to run them with your `ROS_MASTER_UR
     export ROS_MASTER_URI=http://AISOY.CURRENT.IP.ADDRESS:11311
 
 You can then run the nodes with:
+
     rosrun aisoy_playground the_node_you_want_to_run
 
 ===
