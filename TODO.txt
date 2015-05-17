@@ -1,0 +1,32 @@
+Do a minimal example of:
+
+Launch with a grammar ASR.
+
+Make the robot say something with tts.
+
+Make the robot move a motor.
+
+Subscribe to ASR results.
+
+Subscribe to touch events.
+
+Subcribe to accelerometer events.
+
+Make the mouth put some text.
+
+Make the heart change its color.
+
+
+Exercises (maybe give hints): 
+
+Show top load avg in the heart color
+from green 0.1 to red 1.0.
+
+Make robot say what he understood.
+
+Make robot write on mouth which side was touched.
+
+Make robot move it's eyelids when moving it (accelerometer).
+
+
+

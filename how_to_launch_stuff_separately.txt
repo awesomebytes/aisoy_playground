@@ -25,6 +25,12 @@ To start robot mouth screen:
 To start robot heart:
     roslaunch airos4_heart heart.launch
 
+To start touch node:
+    roslaunch airos4_touch touch.launch
+
+To start accelerometer node:
+    roslaunch airos4_accel accel.launch
+
 To start speech recognition (ASR):
     roslaunch airos4_asr asr_nodelet.launch
     roslaunch airos4_asr asr.launch
@@ -47,4 +53,3 @@ To activate asr:
 
 Listen with:
     rostopic echo /asr/recognition
-    
