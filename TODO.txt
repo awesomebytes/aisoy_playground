@@ -1,4 +1,4 @@
-Do a minimal example of:
+* Do a minimal example of:
 
 Launch with a grammar ASR.
 
@@ -17,7 +17,12 @@ Make the mouth put some text.
 Make the heart change its color.
 
 
-Exercises (maybe give hints): 
+Nice to have:
+
+Publish joint states and set up a visualization with urdf. Maybe add markers to show
+other status of stuff of the robot (heart color, text marker with what he says... etc all the stuff)
+
+* Exercises (maybe give hints): 
 
 Show top load avg in the heart color
 from green 0.1 to red 1.0.
