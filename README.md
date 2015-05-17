@@ -11,8 +11,9 @@ You can then run the nodes with:
     rosrun aisoy_playground the_node_you_want_to_run
 
 ===
+You'll find the scripts in the `scripts` folder:
 
-`servos_dyn_rec.py` contains a dynamic reconfigure server to move the robot's servos (head pan, eyelids and eyebrows).
+* `servos_dyn_rec.py` contains a dynamic reconfigure server to move the robot's servos (head pan, eyelids and eyebrows).
 
 Use it with rqt_reconfigure:
 
