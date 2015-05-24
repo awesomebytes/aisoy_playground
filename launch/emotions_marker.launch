@@ -1,0 +1,7 @@
+<launch>
+
+  <include file="$(find aisoy_playground)/launch/marker_publisher.launch"/>
+
+  <node pkg="aisoy_playground" name="demo_marker" type="demo_marker.py" output="screen"/>
+
+</launch>
