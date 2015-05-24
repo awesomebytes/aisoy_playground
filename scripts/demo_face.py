@@ -56,24 +56,12 @@ def callback(data):
     cv2.imshow("Faces found", image)
     cv2.waitKey(1)
 
-
-
-#    """
-#    @type data: Faces
-#    """
-#    if len(data.faces) > 0:
-#        print "Got face detection"
-#        print data.faces[0]
-#        move_servos(0.5, None, None)
-#        # real world detections don't really seem to make sense, use image pixels?
-
-
 if __name__ == "__main__":
     rospy.init_node("demo_face")
 
     move_servos(state, None, None)
     print 'Load facestuff'
-    faceCascade = cv2.CascadeClassifier('/home/bence/aisoy_ws/src/FaceDetect/haarcascade_frontalface_default.xml')
+    faceCascade = cv2.CascadeClassifier('/home/bence/aisoy_ws/src/aisoy_playground/config/haarcascade_frontalface_default.xml')
     bridge = CvBridge()
     sub = rospy.Subscriber("/airos4/camera/image_medium", Image, callback, queue_size=1)
     print 'Subscribed to image'
