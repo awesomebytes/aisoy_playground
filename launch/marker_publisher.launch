@@ -1,0 +1,9 @@
+<launch>
+    
+  <node pkg="aruco_ros" type="marker_publisher" name="aruco">
+        <remap from="/image" to="/airos4/camera/image_medium" />
+        <param name="use_camera_info" value="False"/>
+  </node>
+
+</launch>
+
