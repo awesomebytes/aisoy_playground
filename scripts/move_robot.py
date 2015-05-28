@@ -6,7 +6,7 @@ from airos4_msgs.srv import MoveServo, MoveServoRequest, MoveServoResponse
 
 SERVOS_SRV = "/airos4/servo/move_servo"
 
-def move_servos(head_pan=None, eyelid=None, eyebrow=None):
+def move_head(head_pan=None, eyelid=None, eyebrow=None):
     """
     Do the service calls to the servos service for the given parameter
     :param head_pan: pose of the servo of horizontal movement
