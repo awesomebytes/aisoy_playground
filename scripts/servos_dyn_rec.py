@@ -4,7 +4,7 @@
 import rospy
 from dynamic_reconfigure.server import Server
 from aisoy_playground.cfg import ServosConfig
-from move_robot import move_servos
+from move_robot import move_head
 
 def callback(config, level):
     """
@@ -17,7 +17,7 @@ def callback(config, level):
     eyelid = config['eyelid']
     eyebrow = config['eyebrow']
     rospy.loginfo("Sending servos (head_pan, eyelid, eyebrow) to " + str((head_pan, eyelid, eyebrow)))
-    move_servos(head_pan, eyelid, eyebrow)
+    move_head(head_pan, eyelid, eyebrow)
 
     return config
 

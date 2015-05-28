@@ -3,9 +3,10 @@
 
 import rospy
 from sensor_msgs.msg import Image
-from move_robot import move_servos
+from move_robot import move_head
 import cv2
 from cv_bridge import CvBridge
+from rospkg import RosPack
 
 faceCascade = None
 bridge = None
@@ -49,7 +50,7 @@ def callback(data):
             if diff < -w/2:
                 state = state + 0.02
             print "Sending head to " + str(state)
-            move_servos(state)
+            move_head(state)
             ok_to_move = False
         else:
             ok_to_move = True
@@ -68,9 +69,10 @@ def callback(data):
 if __name__ == "__main__":
     rospy.init_node("demo_face")
 
-    move_servos(state, None, None)
+    move_head(state, None, None)
     print 'Load facestuff'
-    faceCascade = cv2.CascadeClassifier('/home/bence/aisoy_ws/src/aisoy_playground/config/haarcascade_frontalface_default.xml')
+    rp = RosPack()
+    faceCascade = cv2.CascadeClassifier(rp.get_path('aisoy_playground')+'/config/haarcascade_frontalface_default.xml')
     bridge = CvBridge()
     sub = rospy.Subscriber("/airos4/camera/image_medium", Image, callback, queue_size=1)
     print 'Subscribed to image'
