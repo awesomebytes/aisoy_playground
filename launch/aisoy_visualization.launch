@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="aisoy_playground" name="joint_state_publisher" type="joint_state_publisher.py"/>
+
+  <node pkg="robot_state_publisher" name="state_publisher" type="robot_state_publisher"/>
+
+  <node pkg="rviz" name="rviz" type="rviz"/>
+
+</launch>
