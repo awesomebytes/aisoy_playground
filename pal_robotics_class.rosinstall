@@ -1,3 +1,4 @@
 - git: {local-name: airos4_msgs, uri: "https://github.com/awesomebytes/airos4_msgs"}
 - git: {local-name: aisoy_playground, uri: "https://github.com/awesomebytes/aisoy_playground"}
 - git: {local-name: aruco_ros, uri: "https://github.com/pal-robotics/aruco_ros"}
+- git: {local-name: aisoy_description, uri: "https://github.com/bmagyar/aisoy_description"}
