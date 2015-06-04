@@ -70,19 +70,11 @@ def callback(data):
         # The robot cannot look at multiple faces at the same time, so we only move when there is a single face
         if ok_to_move and len(faces) == 1:
             # If the face is on the right, we move right
-            if diff > w/2: # Using w/2 here makes sure that we get the image center into the box of the face
-                if diff > w: # If the face is very far from the center, let's use double the increment!
-                    state = state - 2*INCREMENT
-                else:
-                    state = state - INCREMENT
+            # YOUR CODE HERE
             # If the face is on the left, we move left
-            if diff < -w/2:
-                if diff < w:
-                    state = state + 2*INCREMENT
-                else:
-                    state = state + INCREMENT
-            print "Sending head to " + str(state)
+            # YOUR CODE HERE
             # Turn the robot head using the move_head function
+            print "Sending head to " + str(state)
             move_head(state)
             # Let's not move at all in the next round...
             ok_to_move = False
