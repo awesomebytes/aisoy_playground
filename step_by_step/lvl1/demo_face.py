@@ -7,13 +7,16 @@ import cv2
 from cv_bridge import CvBridge
 
 # Global variables to store runtime information
-faceCascade = None # face detector object
 bridge = None # cv bridge object
 
 def callback(data):
     # Use the bridge to convert the ROS Image message to OpenCV message
     image = bridge.imgmsg_to_cv2(data, desired_encoding="passthrough")
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    # Let's mark the middle of the image with a blue circle
+    # http://docs.opencv.org/modules/core/doc/drawing_functions.html?highlight=rectangle#circle
+    # PUT YOUR CODE HERE
 
     # Pop up a window and visualize the image
     cv2.imshow("Faces found", image)

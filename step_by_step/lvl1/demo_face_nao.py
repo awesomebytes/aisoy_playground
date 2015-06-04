@@ -17,6 +17,10 @@ def callback(data):
     # Convert the image to grayscale
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
+    # Let's mark the middle of the image with a blue circle
+    # http://docs.opencv.org/modules/core/doc/drawing_functions.html?highlight=rectangle#circle
+    # PUT YOUR CODE HERE
+
     # Pop up a window and visualize the image
     cv2.imshow("Faces found", image)
     cv2.waitKey(1)
