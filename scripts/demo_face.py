@@ -67,7 +67,7 @@ def callback(data):
         # The ok_to_move filters moves, in this case we simply filter every second movement, so that the robot is not
         # overreacting when a face moves.
         # The robot cannot look at multiple faces at the same time, so we only move when there is a single face
-        if ok_to_move and len(faces) == 1: #only one face so it wont go crazy with multiple
+        if ok_to_move and len(faces) == 1:
             # If the face is on the right, we move right
             if diff > w/2: # Using w/2 here makes sure that we get the image center into the box of the face
                 state = state - 0.02
