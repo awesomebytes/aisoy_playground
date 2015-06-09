@@ -3,8 +3,8 @@
 
 import rospy
 from std_msgs.msg import UInt32MultiArray
-from move_robot import move_head
-from led_robot import set_color # Do robots dream of many leds?
+from aisoy_playground.move_robot import move_head
+from aisoy_playground.led_robot import set_color # Do robots dream of many leds?
 
 def vision_callback(markers):
     # When the robot sees different markers, it changes the behaviour.
